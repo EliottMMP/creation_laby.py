@@ -37,3 +37,7 @@ if __name__ == "__main__":
     m = nx.adjacency_matrix(Labyrinthe)
     print(m)
     
+Laby = creer_labyrinthe(8, 7, 60)
+print(Laby.nodes())  # Affiche les nœuds du labyrinthes
+print(Laby.edges()) # Affiche les arêtes du labyrinthe
+print(nx.is_connected(Laby))
